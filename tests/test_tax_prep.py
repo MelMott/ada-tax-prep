@@ -104,14 +104,15 @@ def test_big_bracket_last():
     assert taxes == 988 + 3630 + 9988 + 18666 + 14096 + 108868 + 178192
 
 @pytest.fixture
-def all_valid_deductions():
+def new_valid_deductions():
     return {
         "charity": 5000,
         "mortgage": 5000,
         "child": 5000,
         "tuition": 5000,
-        "healthcare": 5000
-    }    
+        "healthcare": 5000,
+        "home office": 5000
+    } 
 
 @pytest.fixture
 def some_invalid_deductions():
